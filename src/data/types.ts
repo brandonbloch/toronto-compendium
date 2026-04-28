@@ -6,9 +6,8 @@ export enum CompendiumCategory {
   Stations = 'Stations',
 }
 
-// TODO: re-enable
-// export interface CompendiumEntry {
-//   id: number;
-//   name: string;
-// }
-export type CompendiumEntry = string;
+export interface CompendiumEntry {
+  id: string;
+  name: string;
+  category: CompendiumCategory;
+}

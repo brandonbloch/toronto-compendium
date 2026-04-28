@@ -39,7 +39,7 @@ body {
 }
 
 h1 {
-  margin: 0;
+  margin: 0 0 2rem;
   font-size: max(2rem, 4vw);
   text-transform: uppercase;
   text-align: center;
@@ -49,7 +49,8 @@ h1 {
 .compendium-section {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 h2 {
@@ -80,7 +81,7 @@ h2::after {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .compendium-thumbnail {
