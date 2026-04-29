@@ -12,7 +12,17 @@
 - Greektown
 - Little Italy
 - Little Portugal
-- TODO
+- The Annex
+- Baldwin Village
+- Cabbagetown
+- CityPlace
+- Church and Wellesley
+- Corktown
+- Discovery District
+- Entertainment District
+- Fashion District
+- Financial District
+- Garden District
 
 ## Buildings and Architecture
 
@@ -242,7 +252,7 @@ https://historyoftoronto.ca/history/churches
 - Driftwood
 - Tobermory
 - Sentinel
-- Queens Quay Station
+- Queens Quay
 
 ## Museums
 
@@ -351,6 +361,7 @@ TODO: how many are there even?
 - Ireland Park
 - Guild Park
 - Lucy Maud Montgomery Park
+- Grange Park
 
 ## Nature
 

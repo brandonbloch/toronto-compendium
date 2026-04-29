@@ -1,23 +1,27 @@
-@font-face{
+@font-face {
   font-family: 'Toronto Subway';
   src: url('./fonts/toronto-subway.otf');
   font-weight: normal;
   font-style: normal;
 }
 
-@font-face{
+@font-face {
   font-family: 'Toronto Subway';
   src: url('./fonts/toronto-subway-bold.otf');
   font-weight: bold;
   font-style: normal;
 }
 
+$fontFamilyBody: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+$fontFamilyHeader: 'Toronto Subway', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
 $background: #242424;
 $text: #eee;
 $highlight: #87ceeb;
+$transitionDuration: 0.2s;
 
 :root {
-  font-family: 'Toronto Subway', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: $fontFamilyBody;
   line-height: 1.5;
   color-scheme: light dark;
   color: $text;
@@ -44,6 +48,7 @@ body {
 
 h1 {
   margin: 0 0 2rem;
+  font-family: $fontFamilyHeader;
   font-size: max(2rem, 4vw);
   text-transform: uppercase;
   text-align: center;
@@ -61,6 +66,7 @@ $_h2_letter_spacing: 0.25rem;
 
 h2 {
   margin: 0;
+  font-family: $fontFamilyHeader;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: $_h2_letter_spacing;
@@ -96,10 +102,10 @@ h2 {
   width: 6rem;
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.5rem;
   color: inherit;
   text-decoration: none;
-  transition: color 0.2s, border-color 0.2s;
+  transition: color $transitionDuration, border-color $transitionDuration;
 
   &:hover {
     color: $highlight;
@@ -109,15 +115,53 @@ h2 {
 
 h3 {
   margin: 0;
-  font-weight: normal;
+  font-size: 1rem;
+  font-weight: 450;
   text-align: center;
-  line-height: 1.1;
+  line-height: 1.2;
+  font-optical-sizing: auto;
+  font-style: italic;
 }
 
 .compendium-thumbnail-image {
+  position: relative;
   box-sizing: border-box;
   border: solid 3px $text;
   border-color: inherit;
   width: 6rem;
   height: 6rem;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 3rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: invert(100%);
+    transition: filter $transitionDuration;
+  }
+
+  &[data-category='Buildings']::before {
+    background-image: url('./icons/skyline.png');
+  }
+
+  &[data-category='Museums']::before {
+    background-image: url('./icons/museum.png');
+  }
+
+  &[data-category='Transit']::before {
+    background-image: url('./icons/ttc.png');
+  }
+
+  &[data-category='Wildlife']::before {
+    background-image: url('./icons/raccoon.png');
+  }
+}
+
+.compendium-thumbnail:hover .compendium-thumbnail-image::before {
+  filter: invert(25%);
 }

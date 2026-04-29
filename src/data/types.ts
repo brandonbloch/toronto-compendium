@@ -3,7 +3,8 @@ export enum CompendiumCategory {
   Museums = 'Museums',
   Parks = 'Parks',
   Landmarks = 'Landmarks',
-  Stations = 'Stations',
+  Transit = 'Transit',
+  Wildlife = 'Wildlife',
 }
 
 export interface CompendiumLocation {
@@ -15,6 +16,7 @@ export interface CompendiumLocation {
 export interface CompendiumEntry {
   id: string;
   name: string;
+  shortName?: string;
   category: CompendiumCategory;
   location?: CompendiumLocation | string;
   date?: string;

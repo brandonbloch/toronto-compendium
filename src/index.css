@@ -11,7 +11,7 @@
   font-style: normal;
 }
 :root {
-  font-family: "Toronto Subway", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   color-scheme: light dark;
   color: #eee;
@@ -38,6 +38,7 @@ body {
 
 h1 {
   margin: 0 0 2rem;
+  font-family: "Toronto Subway", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-size: max(2rem, 4vw);
   text-transform: uppercase;
   text-align: center;
@@ -53,6 +54,7 @@ h1 {
 
 h2 {
   margin: 0;
+  font-family: "Toronto Subway", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.25rem;
@@ -85,7 +87,7 @@ h2::after {
   width: 6rem;
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.5rem;
   color: inherit;
   text-decoration: none;
   transition: color 0.2s, border-color 0.2s;
@@ -97,17 +99,50 @@ h2::after {
 
 h3 {
   margin: 0;
-  font-weight: normal;
+  font-size: 1rem;
+  font-weight: 450;
   text-align: center;
-  line-height: 1.1;
+  line-height: 1.2;
+  font-optical-sizing: auto;
+  font-style: italic;
 }
 
 .compendium-thumbnail-image {
+  position: relative;
   box-sizing: border-box;
   border: solid 3px #eee;
   border-color: inherit;
   width: 6rem;
   height: 6rem;
+}
+.compendium-thumbnail-image::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 3rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: invert(100%);
+  transition: filter 0.2s;
+}
+.compendium-thumbnail-image[data-category=Buildings]::before {
+  background-image: url("./icons/skyline.png");
+}
+.compendium-thumbnail-image[data-category=Museums]::before {
+  background-image: url("./icons/museum.png");
+}
+.compendium-thumbnail-image[data-category=Transit]::before {
+  background-image: url("./icons/ttc.png");
+}
+.compendium-thumbnail-image[data-category=Wildlife]::before {
+  background-image: url("./icons/raccoon.png");
+}
+
+.compendium-thumbnail:hover .compendium-thumbnail-image::before {
+  filter: invert(25%);
 }
 
 /*# sourceMappingURL=index.css.map */

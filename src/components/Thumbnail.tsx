@@ -7,8 +7,11 @@ export interface ThumbnailProps {
 export function Thumbnail({ entry }: ThumbnailProps) {
   return (
     <a className="compendium-thumbnail" href={`/${entry.id}`} title={entry.name}>
-      <div className="compendium-thumbnail-image"></div>
-      {<h3>{entry.name}</h3>}
+      <div className="compendium-thumbnail-image"
+           role="presentation"
+           data-category={entry.category}
+      ></div>
+      {<h3>{entry.shortName ?? entry.name}</h3>}
     </a>
   );
 }
