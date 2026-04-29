@@ -1,5 +1,17 @@
 # Compendium Entries
 
+## Organization
+
+- Buildings and architecture
+   - Historic buildings
+   - Notable architecture
+   - Odd houses
+   - 
+- Neighbourhoods
+- 
+
+***
+
 ## Neighbourhoods
 
 - Distillery District
@@ -57,7 +69,7 @@
 
 https://www.heritagetoronto.org/explore/heritage-toronto-awards-architecture/
 
-## Houses of Worship
+## Places of Worship
 
 https://historyoftoronto.ca/history/churches
 
@@ -90,7 +102,7 @@ https://historyoftoronto.ca/history/churches
 
 ## Toronto Fire Stations
 
-## Toronto Police Stations?
+https://www.toronto.ca/community-people/public-safety-alerts/understanding-emergency-services/fire-station-locations/#location=&lat=&lng=&zoom=
 
 ## Schools
 
@@ -106,6 +118,7 @@ https://historyoftoronto.ca/history/churches
 - Old City Hall
 - Toronto City Hall
 - Ontario Legislative Building
+- Pioneer Village
 
 ## TODO: recategorize
 
@@ -283,6 +296,7 @@ https://historyoftoronto.ca/history/churches
 - Toronto Railway Museum
 - Colborne Lodge?
 - Friar's Music Museum (inside Shoppers at Yonge and Dundas)
+- Museum of Illusions
 
 ## Theatres (interior, and exterior if applicable)
 
@@ -298,6 +312,7 @@ https://historyoftoronto.ca/history/churches
 - Roy Thomson Hall
 - Royal Alexandra Theatre
 - St. Lawrence Centre for the Arts
+- Alumnae Theatre (formerly Berkeley Street Firehall No. 4)
 
 ## Statues and Fountains
 

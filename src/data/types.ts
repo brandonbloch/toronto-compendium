@@ -1,11 +1,16 @@
-export enum CompendiumCategory {
-  Buildings = 'Buildings',
-  Museums = 'Museums',
-  Parks = 'Parks',
-  Landmarks = 'Landmarks',
-  Transit = 'Transit',
-  Wildlife = 'Wildlife',
-}
+export type CompendiumCategory =
+  | 'Buildings'
+  | 'Museums'
+  | 'Parks'
+  | 'Landmarks'
+  | 'Schools' // post-secondary only
+  | 'Libraries'
+  | 'Transit'
+  | 'Neighbourhoods'
+  | 'Wildlife'
+  | 'FireStations'
+  | 'PoliceStations'
+  ;
 
 export interface CompendiumLocation {
   name?: string;

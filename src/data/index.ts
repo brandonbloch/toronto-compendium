@@ -1,696 +1,684 @@
-import { CompendiumCategory, type CompendiumEntry } from './types';
+import { type CompendiumEntry } from './types';
 
 export const compendiumData = [
   {
     id: "cn-tower",
     name: "CN Tower",
-    category: CompendiumCategory.Buildings,
+    category: "Buildings",
   },
   {
     id: "rogers-centre",
     name: "Rogers Centre",
-    category: CompendiumCategory.Buildings,
+    category: "Buildings",
   },
   {
     id: "manulife",
     name: "Manulife Building",
-    category: CompendiumCategory.Buildings,
+    category: "Buildings",
   },
   {
     id: "rom",
     name: "Royal Ontario Museum",
     shortName: "ROM",
-    category: CompendiumCategory.Museums,
+    category: "Museums",
   },
   {
     id: "ago",
     name: "Art Gallery of Ontario",
     shortName: "AGO",
-    category: CompendiumCategory.Museums,
+    category: "Museums",
   },
   {
     id: "raccoon",
     name: "Raccoon",
-    category: CompendiumCategory.Wildlife,
+    category: "Wildlife",
   },
   {
     id: "finch-station",
     name: "Finch Station",
     shortName: "Finch",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
     id: "north-york-centre-station",
     name: "North York Centre Station",
     shortName: "North York Centre",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
     id: "sheppard-yonge-station",
     name: "Sheppard–Yonge Station",
     shortName: "Sheppard–Yonge",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
     id: "york-mills-station",
     name: "York Mills Station",
     shortName: "York Mills",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "lawrence-station",
     name: "Lawrence Station",
     shortName: "Lawrence",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "eglinton-station",
     name: "Eglinton Station",
     shortName: "Eglinton",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "davisville-station",
     name: "Davisville Station",
     shortName: "Davisville",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "st-clair-station",
     name: "St. Clair Station",
     shortName: "St. Clair",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "summerhill-station",
     name: "Summerhill Station",
     shortName: "Summerhill",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "rosedale-station",
     name: "Rosedale Station",
     shortName: "Rosedale",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "bloor-yonge-station",
     name: "Bloor–Yonge Station",
     shortName: "Bloor–Yonge",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "wellesley-station",
     name: "Wellesley Station",
     shortName: "Wellesley",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "college-station",
     name: "College Station",
     shortName: "College",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "tmu-station",
     name: "TMU Station",
     shortName: "TMU",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "queen-station",
     name: "Queen Station",
     shortName: "Queen",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "king-station",
     name: "King Station",
     shortName: "King",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "union-station",
     name: "Union Station",
     shortName: "Union",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "st-andrew-station",
     name: "St. Andrew Station",
     shortName: "St. Andrew",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "osgoode-station",
     name: "Osgoode Station",
     shortName: "Osgoode",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "st-patrick-station",
     name: "St. Patrick Station",
     shortName: "St. Patrick",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "queens-park-station",
     name: "Queen's Park Station",
     shortName: "Queen's Park",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "museum-station",
     name: "Museum Station",
     shortName: "Museum",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "st-george-station",
     name: "St. George Station",
     shortName: "St. George",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "spadina-station",
     name: "Spadina Station",
     shortName: "Spadina",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "dupont-station",
     name: "Dupont Station",
     shortName: "Dupont",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "st-clair-west-station",
     name: "St. Clair West Station",
     shortName: "St. Clair West",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "cedarvale-station",
     name: "Cedarvale Station",
     shortName: "Cedarvale",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "glencairn-station",
     name: "Glencairn Station",
     shortName: "Glencairn",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "lawrence-west-station",
     name: "Lawrence West Station",
     shortName: "Lawrence West",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "yorkdale-station",
     name: "Yorkdale Station",
     shortName: "Yorkdale",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "wilson-station",
     name: "Wilson Station",
     shortName: "Wilson",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "sheppard-west-station",
     name: "Sheppard West Station",
     shortName: "Sheppard West",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "downsview-park-station",
     name: "Downsview Park Station",
     shortName: "Downsview Park",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "finch-west-station",
     name: "Finch West Station",
     shortName: "Finch West",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "york-university-station",
     name: "York University Station",
     shortName: "York University",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "pioneer-village-station",
     name: "Pioneer Village Station",
     shortName: "Pioneer Village",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
-    name: "Highway 407 Station",
-    shortName: "Highway 407",
-    category: CompendiumCategory.Transit,
-  },
-  {
-    id: "", // TODO
-    name: "Vaughan Station",
-    shortName: "Vaughan",
-    category: CompendiumCategory.Transit,
-  },
-  {
-    id: "", // TODO
+    id: "kipling-station",
     name: "Kipling Station",
     shortName: "Kipling",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "islington-station",
     name: "Islington Station",
     shortName: "Islington",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "royal-york-station",
     name: "Royal York Station",
     shortName: "Royal York",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "old-mill-station",
     name: "Old Mill Station",
     shortName: "Old Mill",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "jane-station",
     name: "Jane Station",
     shortName: "Jane",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "runnymede-station",
     name: "Runnymede Station",
     shortName: "Runnymede",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "high-park-station",
     name: "High Park Station",
     shortName: "High Park",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "keele-station",
     name: "Keele Station",
     shortName: "Keele",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "dundas-west-station",
     name: "Dundas West Station",
     shortName: "Dundas West",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "lansdowne-station",
     name: "Lansdowne Station",
     shortName: "Lansdowne",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "dufferin-station",
     name: "Dufferin Station",
     shortName: "Dufferin",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "ossington-station",
     name: "Ossington Station",
     shortName: "Ossington",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "christie-station",
     name: "Christie Station",
     shortName: "Christie",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "bathurst-station",
     name: "Bathurst Station",
     shortName: "Bathurst",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "bay-station",
     name: "Bay Station",
     shortName: "Bay",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "sherbourne-station",
     name: "Sherbourne Station",
     shortName: "Sherbourne",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "castle-frank-station",
     name: "Castle Frank Station",
     shortName: "Castle Frank",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "broadview-station",
     name: "Broadview Station",
     shortName: "Broadview",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "chester-station",
     name: "Chester Station",
     shortName: "Chester",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "pape-station",
     name: "Pape Station",
     shortName: "Pape",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "donlands-station",
     name: "Donlands Station",
     shortName: "Donlands",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "greenwood-station",
     name: "Greenwood Station",
     shortName: "Greenwood",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "coxwell-station",
     name: "Coxwell Station",
     shortName: "Coxwell",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "woodbine-station",
     name: "Woodbine Station",
     shortName: "Woodbine",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "main-street-station",
     name: "Main Street Station",
     shortName: "Main Street",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "victoria-park-station",
     name: "Victoria Park Station",
     shortName: "Victoria Park",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "warden-station",
     name: "Warden Station",
     shortName: "Warden",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "kennedy-station",
     name: "Kennedy Station",
     shortName: "Kennedy",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "bayview-station",
     name: "Bayview Station",
     shortName: "Bayview",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "bessarion-station",
     name: "Bessarion Station",
     shortName: "Bessarion",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "leslie-station",
     name: "Leslie Station",
     shortName: "Leslie",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "don-mills-station",
     name: "Don Mills Station",
     shortName: "Don Mills",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "mount-dennis-station",
     name: "Mount Dennis Station",
     shortName: "Mount Dennis",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "keelesdale-station",
     name: "Keelesdale Station",
     shortName: "Keelesdale",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "caledonia-station",
     name: "Caledonia Station",
     shortName: "Caledonia",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "fairbank-station",
     name: "Fairbank Station",
     shortName: "Fairbank",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "oakwood-station",
     name: "Oakwood Station",
     shortName: "Oakwood",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "forest-hill-station",
     name: "Forest Hill Station",
     shortName: "Forest Hill",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "chaplin-station",
     name: "Chaplin Station",
     shortName: "Chaplin",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "avenue-station",
     name: "Avenue Station",
     shortName: "Avenue",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "mount-pleasant-station",
     name: "Mount Pleasant Station",
     shortName: "Mount Pleasant",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "leaside-station",
     name: "Leaside Station",
     shortName: "Leaside",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "laird-station",
     name: "Laird Station",
     shortName: "Laird",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "sunnybrook-park-station",
     name: "Sunnybrook Park Station",
     shortName: "Sunnybrook Park",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "don-valley-station",
     name: "Don Valley Station",
     shortName: "Don Valley",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "aga-khan-station",
     name: "Aga Khan Park & Museum Station",
     shortName: "Aga Khan",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "wynford-station",
     name: "Wynford Station",
     shortName: "Wynford",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "sloane-station",
     name: "Sloane Station",
     shortName: "Sloane",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "oconnor-station",
     name: "O'Connor Station",
     shortName: "O'Connor",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "pharmacy-station",
     name: "Pharmacy Station",
     shortName: "Pharmacy",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "hamimi-lebovic-station",
     name: "Hakimi Lebovic Station",
     shortName: "Hakimi Lebovic",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "golden-mile-station",
     name: "Golden Mile Station",
     shortName: "Golden Mile",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "birchmount-station",
     name: "Birchmount Station",
     shortName: "Birchmount",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "ionview-station",
     name: "Ionview Station",
     shortName: "Ionview",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "humber-college-station",
     name: "Humber College Station",
     shortName: "Humber College",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "westmore-station",
     name: "Westmore Station",
     shortName: "Westmore",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "martin-grove-station",
     name: "Martin Grove Station",
     shortName: "Martin Grove",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "albion-station",
     name: "Albion Station",
     shortName: "Albion",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "stevenson-station",
     name: "Stevenson Station",
     shortName: "Stevenson",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "mount-olive-station",
     name: "Mount Olive Station",
     shortName: "Mount Olive",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "rowntree-mills-station",
     name: "Rowntree Mills Station",
     shortName: "Rowntree Mills",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "pearldale-station",
     name: "Pearldale Station",
     shortName: "Pearldale",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "duncanwoods-station",
     name: "Duncanwoods Station",
     shortName: "Duncanwoods",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "milvan-rumike-station",
     name: "Milvan Rumike Station",
     shortName: "Milvan Rumike",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "emery-station",
     name: "Emery Station",
     shortName: "Emery",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "signet-arrow-station",
     name: "Signet Arrow Station",
     shortName: "Signet Arrow",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "norfinch-oakdale-station",
     name: "Norfinch Oakdale Station",
     shortName: "Norfinch Oakdale",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "jane-and-finch-station",
     name: "Jane and Finch Station",
     shortName: "Jane and Finch",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "driftwood-station",
     name: "Driftwood Station",
     shortName: "Driftwood",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "tobermory-station",
     name: "Tobermory Station",
     shortName: "Tobermory",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "sentinel-station",
     name: "Sentinel Station",
     shortName: "Sentinel",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
   {
-    id: "", // TODO
+    id: "queens-quay-station",
     name: "Queens Quay Station",
     shortName: "Queens Quay",
-    category: CompendiumCategory.Transit,
+    category: "Transit",
   },
 ] as const satisfies readonly CompendiumEntry[];
