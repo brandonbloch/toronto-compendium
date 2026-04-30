@@ -1,6 +1,6 @@
 import type { CompendiumEntry } from '@/data/entries.ts';
 
-export const compendiumData = [
+export const compendiumData: readonly CompendiumEntry[] = [
   {
     id: "cn-tower",
     name: "CN Tower",
@@ -687,4 +687,4 @@ export const compendiumData = [
     category: "parks",
     location: "islands",
   },
-] as const satisfies readonly CompendiumEntry[];
+] as const;

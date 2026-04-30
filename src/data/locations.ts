@@ -7,7 +7,7 @@ export type CompendiumLocation = typeof locations[number];
 export interface CompendiumLocationDetails {
   name: string;
   address?: string;
-  coords?: [number, number];
+  coords?: [number, number]; // [degrees north, degrees east]
 }
 
 export const locationDetails: Record<CompendiumLocation, CompendiumLocationDetails> = {

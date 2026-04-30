@@ -36,13 +36,40 @@ body {
   flex-direction: column;
 }
 
+.compendium-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 2rem;
+}
+
 h1 {
-  margin: 0 0 2rem;
+  margin: 0;
   font-family: "Toronto Subway", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-size: max(2rem, 4vw);
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.25rem;
+}
+
+.compendium-back-button {
+  position: absolute;
+  left: 0;
+  width: 3rem;
+  height: 3rem;
+  font-size: 2rem;
+  text-decoration: none;
+  text-align: center;
+  color: #eee;
+  border: solid 2.5px #eee;
+  border-radius: 2rem;
+  transition: color 0.2s, border-color 0.2s;
+}
+.compendium-back-button:hover {
+  color: #87ceeb;
+  border-color: #87ceeb;
 }
 
 .compendium-section {
@@ -58,20 +85,27 @@ h2 {
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.25rem;
+}
+
+.compendium-section h2,
+.not-found h2 {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
 }
-h2::before, h2::after {
+.compendium-section h2::before, .compendium-section h2::after,
+.not-found h2::before,
+.not-found h2::after {
   content: "";
   flex-basis: 0;
   flex-grow: 1;
   height: 1px;
   background-color: white;
 }
-h2::after {
+.compendium-section h2::after,
+.not-found h2::after {
   margin-left: -0.25rem;
 }
 
@@ -146,6 +180,58 @@ h3 {
 
 .compendium-thumbnail:hover .compendium-thumbnail-image::before {
   filter: invert(25%);
+}
+
+.not-found p {
+  margin: 4rem 0;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.compendium-entry {
+  display: grid;
+  grid-template-columns: 30% 1fr 30%;
+  gap: 1rem;
+}
+
+.compendium-entry-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.compendium-entry-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  min-height: 6rem;
+}
+.compendium-entry-section h2 {
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  box-sizing: border-box;
+  width: 100%;
+  border: solid 2px #eee;
+}
+.compendium-entry-section p {
+  margin: 0 0.5rem;
+  font-style: italic;
+}
+
+.compendium-entry-name h2 {
+  font-size: 1.5rem;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 550;
+  letter-spacing: 0;
+  text-transform: none;
+  font-optical-sizing: auto;
+  font-style: italic;
+}
+
+.compendium-entry-snapshot {
+  border: solid 2px #eee;
+  padding-top: 75%;
 }
 
 /*# sourceMappingURL=index.css.map */
