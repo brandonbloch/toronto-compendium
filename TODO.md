@@ -1,17 +1,5 @@
 # Compendium Entries
 
-## Organization
-
-- Buildings and architecture
-   - Historic buildings
-   - Notable architecture
-   - Odd houses
-   - 
-- Neighbourhoods
-- 
-
-***
-
 ## Neighbourhoods
 
 - Distillery District
@@ -36,10 +24,13 @@
 - Financial District
 - Garden District
 
+TODO
+
 ## Buildings and Architecture
 
-- CN Tower (Exterior)
+- CN Tower
 - Rogers Centre
+- Ripley's Aquarium
 - Scotiabank Arena
 - BMO Field
 - Gooderham Building
@@ -66,10 +57,16 @@
 - North Toronto Station (Summerhill)
 - Metro Toronto Convention Centre
 - Rogers Building
+- Coca-Cola Coliseum
+- Masonic Temple
+
+TODO: skyscrapers?
 
 https://www.heritagetoronto.org/explore/heritage-toronto-awards-architecture/
 
-## Places of Worship
+TODO: oldest buildings in toronto
+
+TODO: notable buildings of universities and colleges
 
 https://historyoftoronto.ca/history/churches
 
@@ -89,22 +86,24 @@ https://historyoftoronto.ca/history/churches
 - Beach Hebrew Institute
 - Jami Mosque
 - Fatih Mosque
-- TODO: others?
 
 ## Libraries
+
+https://tpl.bibliocommons.com/v2/locations
 
 - Toronto Reference Library
 - Lillian H. Smith Toronto Public Library
 - every TPL branch (TODO: expand)
 - Thomas Fisher Rare Book Library
 - Arthur Conan Doyle Room (in Toronto Reference Library)
-- TODO: others?
+
+TODO: remaining list items
+
+TODO: bookmobile (https://tpl.ca/bookmobiles/bookmobile-schedule/)
 
 ## Toronto Fire Stations
 
 https://www.toronto.ca/community-people/public-safety-alerts/understanding-emergency-services/fire-station-locations/#location=&lat=&lng=&zoom=
-
-## Schools
 
 ## Attractions
 
@@ -123,7 +122,6 @@ https://www.toronto.ca/community-people/public-safety-alerts/understanding-emerg
 ## TODO: recategorize
 
 - Campbell House
-- Spadina House (Spadina Museum)
 - Osgoode Hall
 - Royal Bank Plaza
 - The Well
@@ -154,6 +152,8 @@ https://www.toronto.ca/community-people/public-safety-alerts/understanding-emerg
 
 ## Museums
 
+https://www.toronto.ca/explore-enjoy/history-art-culture/museums/
+
 - Royal Ontario Museum
 - Art Gallery of Ontario
 - Hockey Hall of Fame
@@ -164,6 +164,7 @@ https://www.toronto.ca/community-people/public-safety-alerts/understanding-emerg
 - High Park Zoo
 - Bata Shoe Museum
 - Little Canada
+- Spadina House (Spadina Museum)
 - Allan Gardens Conservatory
 - Gardiner Museum of Ceramic Art
 - Mackenzie House
@@ -183,7 +184,7 @@ https://www.toronto.ca/community-people/public-safety-alerts/understanding-emerg
 - Friar's Music Museum (inside Shoppers at Yonge and Dundas)
 - Museum of Illusions
 
-## Theatres (interior, and exterior if applicable)
+## Theatres and Venues (exterior if pretty, interior if pretty)
 
 - CAA Theatre
 - Ed Mirvish Theatre
@@ -198,6 +199,22 @@ https://www.toronto.ca/community-people/public-safety-alerts/understanding-emerg
 - Royal Alexandra Theatre
 - St. Lawrence Centre for the Arts
 - Alumnae Theatre (formerly Berkeley Street Firehall No. 4)
+- Four Seasons Centre for the Performing Arts
+- Queen Elizabeth Theatre
+- RBC Amphitheatre
+- El Mocambo
+- Horseshoe
+- Rivoli
+- Phoenix Concert Theatre
+- History
+- Danforth Music Hall
+- Tranzac?
+- Rogers Stadium
+- CNE Bandshell
+- Rebel
+- Koerner Hall
+
+https://en.wikipedia.org/wiki/List_of_music_venues_in_Toronto#Small_venues
 
 ## Statues and Fountains
 
@@ -244,6 +261,8 @@ TODO: how many are there even?
 
 ## Parks
 
+https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/park-listings/
+
 - Allan Gardens
 - Queen's Park
 - Trinity Bellwoods Park
@@ -262,6 +281,9 @@ TODO: how many are there even?
 - Guild Park
 - Lucy Maud Montgomery Park
 - Grange Park
+- Christie Pits Park
+- Sunnybrook Park
+- TODO
 
 ## Nature
 
@@ -282,6 +304,8 @@ TODO
 
 ## Toronto Islands
 
+https://www.toronto.ca/explore-enjoy/toronto-island-ferries/things-to-do-on-toronto-island/
+
 - Billy Bishop Toronto City Airport (YTZ)
 - Centreville
 - Gibraltar Point Lighthouse
@@ -289,3 +313,7 @@ TODO
   - Beach
   - Rainbow Road
 - TODO: ...
+
+## Public Art
+
+https://www.toronto.ca/explore-enjoy/history-art-culture/public-art/public-art-map/#location=&lat=&lng=&zoom=

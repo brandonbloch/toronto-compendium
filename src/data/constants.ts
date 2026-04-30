@@ -1,21 +1,6 @@
-import type { CompendiumCategory } from '@/data/types.ts';
+import { _categories, type CompendiumCategory } from '@/data/types.ts';
 
-// used to ensure all members are present with no duplicates
-const categoriesObj = {
-  Buildings: 'Buildings',
-  Museums: 'Museums',
-  Parks: 'Parks',
-  Landmarks: 'Landmarks',
-  Schools: 'Schools',
-  Libraries: 'Libraries',
-  Transit: 'Transit',
-  Neighbourhoods: 'Neighbourhoods',
-  Wildlife: 'Wildlife',
-  FireStations: 'FireStations',
-  PoliceStations: 'PoliceStations',
-} as const satisfies Record<CompendiumCategory, string>;
-
-export const categories: readonly CompendiumCategory[] = Object.values(categoriesObj);
+export const categories = _categories;
 
 export const categorySlugs = {
   Buildings: 'buildings',
@@ -28,7 +13,6 @@ export const categorySlugs = {
   Neighbourhoods: 'neighbourhoods',
   Wildlife: 'wildlife',
   FireStations: 'fire-stations',
-  PoliceStations: 'police-stations',
 } as const satisfies Record<CompendiumCategory, string>;
 
 export const categoryLabels: Partial<Record<CompendiumCategory, string>> = {
@@ -37,5 +21,4 @@ export const categoryLabels: Partial<Record<CompendiumCategory, string>> = {
   Transit: 'Transit Stations',
   Wildlife: 'Flora & Fauna',
   FireStations: 'Fire Stations',
-  PoliceStations: 'Police Stations',
 } as const;
