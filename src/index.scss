@@ -145,20 +145,24 @@ h3 {
     transition: filter $transitionDuration;
   }
 
-  &[data-category='Buildings']::before {
+  &[data-category='buildings']::before {
     background-image: url('./icons/skyline.png');
   }
 
-  &[data-category='Museums']::before {
+  &[data-category='museums']::before {
     background-image: url('./icons/museum.png');
   }
 
-  &[data-category='Transit']::before {
+  &[data-category='transit']::before {
     background-image: url('./icons/ttc.png');
   }
 
-  &[data-category='Wildlife']::before {
+  &[data-category='wildlife']::before {
     background-image: url('./icons/raccoon.png');
+  }
+
+  &[data-category='parks']::before {
+    background-image: url('./icons/park.png');
   }
 }
 

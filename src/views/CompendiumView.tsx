@@ -1,5 +1,5 @@
 import { Section } from '@/components/Section.tsx';
-import { categories } from '@/data/constants.ts';
+import { categories } from '@/data/categories.ts';
 
 export function CompendiumView() {
   return (

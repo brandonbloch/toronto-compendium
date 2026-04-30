@@ -1,4 +1,4 @@
-import type { CompendiumEntry } from '@/data/types.ts';
+import type { CompendiumEntry } from '@/data/entries.ts';
 
 export interface ThumbnailProps {
   entry: CompendiumEntry;

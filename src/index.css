@@ -128,17 +128,20 @@ h3 {
   filter: invert(100%);
   transition: filter 0.2s;
 }
-.compendium-thumbnail-image[data-category=Buildings]::before {
+.compendium-thumbnail-image[data-category=buildings]::before {
   background-image: url("./icons/skyline.png");
 }
-.compendium-thumbnail-image[data-category=Museums]::before {
+.compendium-thumbnail-image[data-category=museums]::before {
   background-image: url("./icons/museum.png");
 }
-.compendium-thumbnail-image[data-category=Transit]::before {
+.compendium-thumbnail-image[data-category=transit]::before {
   background-image: url("./icons/ttc.png");
 }
-.compendium-thumbnail-image[data-category=Wildlife]::before {
+.compendium-thumbnail-image[data-category=wildlife]::before {
   background-image: url("./icons/raccoon.png");
+}
+.compendium-thumbnail-image[data-category=parks]::before {
+  background-image: url("./icons/park.png");
 }
 
 .compendium-thumbnail:hover .compendium-thumbnail-image::before {

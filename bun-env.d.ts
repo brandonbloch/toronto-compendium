@@ -15,3 +15,8 @@ declare module "*.module.css" {
   const classes: { readonly [key: string]: string };
   export = classes;
 }
+
+// just to shut tsc up about `import "./index.css"`
+declare module "*.css" {
+  export = undefined;
+}

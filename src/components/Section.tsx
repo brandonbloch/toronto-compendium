@@ -1,7 +1,6 @@
 import { Thumbnail } from '@/components/Thumbnail.tsx';
 import { compendiumData } from '@/data';
-import { categoryLabels } from '@/data/constants.ts';
-import type { CompendiumCategory } from '@/data/types.ts';
+import { categoryLabels, type CompendiumCategory } from '@/data/categories.ts';
 import { useMemo } from 'react';
 
 export interface SectionProps {
@@ -9,7 +8,7 @@ export interface SectionProps {
 }
 
 export function Section({ category }: SectionProps) {
-  const categoryLabel = categoryLabels[category] ?? category;
+  const categoryLabel = categoryLabels[category];
   const categoryEntries = useMemo(() => compendiumData.filter(
     (entry) => entry.category === category
   ), []);
