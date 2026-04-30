@@ -208,12 +208,10 @@ h3 {
   text-align: center;
 }
 
-// TODO: mobile-first layout
-
 .compendium-entry {
-  display: grid;
-  grid-template-columns: 30% 1fr 30%;
-  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .compendium-entry-column {
@@ -227,14 +225,13 @@ h3 {
   flex-direction: column;
   gap: 1rem;
   align-items: center;
-  min-height: 6rem;
 
   h2 {
-    font-size: 1.2rem;
-    letter-spacing: 0.1rem;
     box-sizing: border-box;
     width: 100%;
     border: solid 2px $text;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
   }
 
   p {
@@ -255,7 +252,38 @@ h3 {
   }
 }
 
+@media (min-width: 720px) {
+
+  .compendium-entry {
+    display: grid;
+    grid-template-columns: 30% 1fr 30%;
+    gap: 1rem;
+  }
+
+  .compendium-entry-column {
+    grid-row: 1;
+  }
+
+  .compendium-entry-column-details {
+    grid-column: 1;
+  }
+
+  .compendium-entry-column-info {
+    grid-column: 2;
+  }
+
+  .compendium-entry-column-description {
+    grid-column: 3;
+  }
+
+  .compendium-entry-section {
+    min-height: 6rem;
+  }
+
+}
+
 .compendium-entry-snapshot {
   border: solid 2px $text;
   padding-top: 75%;
+  box-sizing: border-box;
 }

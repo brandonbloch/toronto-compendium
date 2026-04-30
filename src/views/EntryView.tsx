@@ -1,5 +1,6 @@
 import { EntryDescription } from '@/components/EntryDescription.tsx';
 import { EntryLocation } from '@/components/EntryLocation.tsx';
+import { Snapshot } from '@/components/Snapshot.tsx';
 import { compendiumData } from '@/data';
 import { NotFoundView } from '@/views/NotFoundView.tsx';
 import { useMemo } from 'react';
@@ -21,7 +22,13 @@ export function EntryView() {
 
   return (
     <div className="compendium-entry">
-      <div className="compendium-entry-column">
+      <div className="compendium-entry-column compendium-entry-column-info">
+        <div className="compendium-entry-name">
+          <h2>{entry.name}</h2>
+        </div>
+        <Snapshot />
+      </div>
+      <div className="compendium-entry-column compendium-entry-column-details">
         <div className="compendium-entry-section">
           <h2>Established</h2>
           <p>{entry.date ?? '?'}</p>
@@ -31,13 +38,7 @@ export function EntryView() {
           <EntryLocation location={entry.location} />
         </div>
       </div>
-      <div className="compendium-entry-column">
-        <div className="compendium-entry-name">
-          <h2>{entry.name}</h2>
-        </div>
-        <div className="compendium-entry-snapshot">{/* TODO */}</div>
-      </div>
-      <div className="compendium-entry-column">
+      <div className="compendium-entry-column compendium-entry-column-description">
         <div className="compendium-entry-section">
           <h2>Description</h2>
           <EntryDescription description={entry.description ?? fillerDescription} />
