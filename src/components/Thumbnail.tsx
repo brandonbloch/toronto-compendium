@@ -1,12 +1,13 @@
 import type { CompendiumEntry } from '@/data/entries.ts';
-import { useUserDataContext } from '@/data/UserDataContext.tsx';
+import { useUserData } from '@/useUserData.ts';
 
 export interface ThumbnailProps {
   entry: CompendiumEntry;
 }
 
 export function Thumbnail({ entry }: ThumbnailProps) {
-  const userData = useUserDataContext();
+  const { userData } = useUserData();
+
   return (
     <a className="compendium-thumbnail"
        href={`/entries/${entry.id}`}

@@ -1,34 +1,17 @@
 import './index.css';
 import { Compendium } from '@/components/Compendium.tsx';
-import { defaultUserData } from '@/db/default.ts';
 import { NotFoundView } from '@/views/NotFoundView.tsx';
-import { useEffect, useState } from 'react';
-import { UserDataContext } from './data/UserDataContext.tsx';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 import { CompendiumView } from '@/views/CompendiumView.tsx';
 import { EntryView } from '@/views/EntryView.tsx';
 import { BrowserRouter, Route, Routes } from 'react-router';
 
+const queryClient = new QueryClient();
+
 export function App() {
-  const [userData, setUserData] = useState(defaultUserData);
-  const [loadingUserData, setLoadingUserData] = useState(false);
-  const [loadedUserData, setLoadedUserData] = useState(false);
-
-  useEffect(() => {
-    if (!loadedUserData && !loadingUserData) {
-      setLoadingUserData(true);
-      const fetchData = async () => {
-        const response = await fetch('/api/data');
-        const data = await response.json();
-        setUserData(data);
-        setLoadedUserData(true);
-      };
-      fetchData();
-    }
-  }, [loadedUserData, loadingUserData, setLoadedUserData, setLoadingUserData]);
-
   return (
-    <UserDataContext.Provider value={userData}>
+    <QueryClientProvider client={queryClient}>
       <BrowserRouter>
         <Compendium>
           <Routes>
@@ -38,7 +21,7 @@ export function App() {
           </Routes>
         </Compendium>
       </BrowserRouter>
-    </UserDataContext.Provider>
+    </QueryClientProvider>
   );
 }
 

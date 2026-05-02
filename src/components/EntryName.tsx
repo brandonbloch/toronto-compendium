@@ -1,17 +1,23 @@
 import type { CompendiumEntry } from '@/data/entries.ts';
-import { useUserDataContext } from '@/data/UserDataContext.tsx';
+import { useUserData } from '@/useUserData.ts';
 
 export interface EntryNameProps {
   entry: CompendiumEntry;
 }
 
 export function EntryName({ entry }: EntryNameProps) {
-  const userData = useUserDataContext();
+  const { userData, updateEntryCompletion } = useUserData();
   const completed = userData.completion[entry.id];
 
   return (
     <>
-      {completed && <span className='compendium-completion-checkmark' title='Completed'>✓</span>}
+      <button className='compendium-completion-checkmark'
+              data-completed={completed}
+              title={`Mark as ${completed ? 'not completed' : 'completed'}`}
+              onClick={() => updateEntryCompletion(entry.id, !completed)}
+      >
+        ✓
+      </button>
       <h2>{entry.name}</h2>
     </>
   );
