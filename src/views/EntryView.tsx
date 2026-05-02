@@ -14,7 +14,7 @@ export function EntryView() {
   const { entryId } = useParams();
   const entry = useMemo(() => compendiumData.find(
     (entry) => entry.id === entryId
-  ), []);
+  ), [entryId]);
 
   if (!entry) {
     return (

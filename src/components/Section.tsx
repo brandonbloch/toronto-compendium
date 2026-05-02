@@ -11,7 +11,7 @@ export function Section({ category }: SectionProps) {
   const categoryLabel = categoryLabels[category];
   const categoryEntries = useMemo(() => compendiumData.filter(
     (entry) => entry.category === category
-  ), []);
+  ), [category]);
 
   return (
     <section className="compendium-section">
