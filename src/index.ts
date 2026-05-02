@@ -1,13 +1,28 @@
-import { serve } from "bun";
-import index from "./index.html";
+import { loadUserData } from '@/api/load.ts';
+import { saveUserData } from '@/api/save.ts';
+import { serve } from 'bun';
+import index from './index.html';
 
 const server = serve({
   routes: {
+
+    '/api/data': {
+      GET: loadUserData,
+      POST: saveUserData,
+    },
+
     // Serve index.html for all unmatched routes.
-    "/*": index,
+    '/*': index,
   },
 
-  development: process.env.NODE_ENV !== "production" && {
+  error: (error) => new Response(JSON.stringify({
+    message: error.message,
+    code: error.code,
+  }, null, 2), {
+    status: 500,
+  }),
+
+  development: process.env.NODE_ENV !== 'production' && {
     // Enable browser hot reloading in development
     hmr: true,
 

@@ -1,5 +1,6 @@
 export const categories = [
   'buildings',
+  'monuments',
   'landmarks',
   'museums',
   'parks',
@@ -14,6 +15,7 @@ export type CompendiumCategory = typeof categories[number];
 
 export const categoryLabels: Record<CompendiumCategory, string> = {
   buildings: 'Buildings & Architecture',
+  monuments: 'Statues & Monuments',
   landmarks: 'Landmarks',
   museums: 'Museums & Galleries',
   parks: 'Parks',

@@ -1,7 +1,9 @@
 import { EntryDescription } from '@/components/EntryDescription.tsx';
 import { EntryLocation } from '@/components/EntryLocation.tsx';
+import { EntryName } from '@/components/EntryName.tsx';
 import { Snapshot } from '@/components/Snapshot.tsx';
 import { compendiumData } from '@/data';
+import { getEstablishedLabel } from '@/data/utils.ts';
 import { NotFoundView } from '@/views/NotFoundView.tsx';
 import { useMemo } from 'react';
 import { useParams } from 'react-router';
@@ -24,14 +26,14 @@ export function EntryView() {
     <div className="compendium-entry">
       <div className="compendium-entry-column compendium-entry-column-info">
         <div className="compendium-entry-name">
-          <h2>{entry.name}</h2>
+          <EntryName entry={entry} />
         </div>
         <Snapshot />
       </div>
       <div className="compendium-entry-column compendium-entry-column-details">
         <div className="compendium-entry-section">
-          <h2>Established</h2>
-          <p>{entry.date ?? '?'}</p>
+          <h2>{getEstablishedLabel(entry.category)}</h2>
+          <p>{entry.date ?? '???'}</p>
         </div>
         <div className="compendium-entry-section">
           <h2>Location</h2>

@@ -317,3 +317,7 @@ https://www.toronto.ca/explore-enjoy/toronto-island-ferries/things-to-do-on-toro
 ## Public Art
 
 https://www.toronto.ca/explore-enjoy/history-art-culture/public-art/public-art-map/#location=&lat=&lng=&zoom=
+
+## Hospitals
+
+TODO

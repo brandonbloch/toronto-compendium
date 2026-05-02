@@ -13,7 +13,7 @@ function formatCoords([degNorth, degEast]: [number, number]) {
 export function EntryLocation({ location }: EntryLocationProps) {
   if (!location) {
     return (
-      <p>?</p>
+      <p>???</p>
     );
   }
 

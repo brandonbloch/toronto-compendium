@@ -198,6 +198,10 @@ h3 {
   }
 }
 
+.compendium-thumbnail[data-completed='true'] .compendium-thumbnail-image {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 .compendium-thumbnail:hover .compendium-thumbnail-image::before {
   filter: invert(25%);
 }
@@ -241,6 +245,12 @@ h3 {
 }
 
 .compendium-entry-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
   h2 {
     font-size: 1.5rem;
     font-family: $fontFamilyBody;
@@ -250,6 +260,16 @@ h3 {
     font-optical-sizing: auto;
     font-style: italic;
   }
+}
+
+.compendium-completion-checkmark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: solid 2px $text;
+  border-radius: 2rem;
 }
 
 @media (min-width: 720px) {
