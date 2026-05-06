@@ -45,7 +45,6 @@ TODO
 - Old Mill
 - Hockey Hall of Fame
 - Sharp Centre for Design (OCAD)
-- Todmorden Mills
 - Toronto Police Headquarters
 - Queen's Quay Terminal
 - Jack Layton Ferry Terminal
@@ -115,11 +114,9 @@ https://www.toronto.ca/community-people/public-safety-alerts/understanding-emerg
 - Old City Hall
 - Toronto City Hall
 - Ontario Legislative Building
-- Pioneer Village
 
 ## TODO: recategorize
 
-- Campbell House
 - Osgoode Hall
 - Royal Bank Plaza
 - The Well
@@ -147,40 +144,6 @@ https://www.toronto.ca/community-people/public-safety-alerts/understanding-emerg
 - Much
 - CityTV
 - TODO...
-
-## Museums
-
-https://www.toronto.ca/explore-enjoy/history-art-culture/museums/
-
-- Royal Ontario Museum
-- Art Gallery of Ontario
-- Hockey Hall of Fame
-- Ontario Science Centre
-- Aga Khan Museum
-- Toronto Botanical Garden (Edwards Gardens)
-- Toronto Zoo
-- High Park Zoo
-- Bata Shoe Museum
-- Little Canada
-- Spadina House (Spadina Museum)
-- Allan Gardens Conservatory
-- Gardiner Museum of Ceramic Art
-- Mackenzie House
-- Wychwood Park (Marshall McLuhan's House)
-- Market Gallery (in St. Lawrence Market)
-- Museum of Contemporary Art (MOCA)
-- Museum of Toronto
-- MZTV Museum of Television
-- OCAD University Galleries
-- Redpath Sugar Museum
-- Riverdale Farm
-- Textile Museum of Canada
-- Todmorden Mills
-- Toronto Police Museum and Discovery Centre
-- Toronto Railway Museum
-- Colborne Lodge?
-- Friar's Music Museum (inside Shoppers at Yonge and Dundas)
-- Museum of Illusions
 
 ## Theatres and Venues (exterior if pretty, interior if pretty)
 
@@ -242,7 +205,6 @@ TODO: how many are there even?
 - Exhibition Place
 - Ontario Place
 - Evergreen Brick Works
-- Fort York
 - Graffiti Alley
 - Scarborough Bluffs
 - Sankofa Square
