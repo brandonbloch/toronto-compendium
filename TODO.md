@@ -91,10 +91,8 @@ https://historyoftoronto.ca/history/churches
 
 https://tpl.bibliocommons.com/v2/locations
 
-- Toronto Reference Library
-- Lillian H. Smith Toronto Public Library
-- every TPL branch (TODO: expand)
 - Thomas Fisher Rare Book Library
+- University Libraries (e.g. Robarts Library @ UofT)
 - Arthur Conan Doyle Room (in Toronto Reference Library)
 
 TODO: remaining list items

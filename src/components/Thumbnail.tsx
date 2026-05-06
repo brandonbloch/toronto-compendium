@@ -17,7 +17,7 @@ export function Thumbnail({ entry }: ThumbnailProps) {
            role="presentation"
            data-category={entry.category}
       ></div>
-      {<h3>{entry.shortName ?? entry.name}</h3>}
+      {<h3>{entry.jsxShortName ?? entry.shortName ?? entry.name}</h3>}
     </a>
   );
 }

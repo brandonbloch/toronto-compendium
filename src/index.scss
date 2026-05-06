@@ -153,6 +153,7 @@ h3 {
   line-height: 1.2;
   font-optical-sizing: auto;
   font-style: italic;
+  hyphens: manual;
 }
 
 .compendium-thumbnail-image {
@@ -195,6 +196,10 @@ h3 {
 
   &[data-category='parks']::before {
     background-image: url('./icons/park.png');
+  }
+
+  &[data-category='libraries']::before {
+    background-image: url('./icons/library.png');
   }
 }
 
@@ -310,6 +315,18 @@ h3 {
     min-height: 6rem;
   }
 
+}
+
+.compendium-entry-snapshot-background {
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  filter: brightness(0.5);
 }
 
 .compendium-entry-snapshot {

@@ -1,5 +1,6 @@
-import { loadUserData } from '@/api/load.ts';
-import { saveUserData } from '@/api/save.ts';
+import { loadImage } from '@/api/loadImage.ts';
+import { loadUserData } from '@/api/loadUserData.ts';
+import { saveUserData } from '@/api/saveUserData.ts';
 import { serve } from 'bun';
 import index from './index.html';
 
@@ -9,6 +10,10 @@ const server = serve({
     '/api/data': {
       GET: loadUserData,
       POST: saveUserData,
+    },
+
+    '/api/image/:id': {
+      GET: loadImage,
     },
 
     // Serve index.html for all unmatched routes.

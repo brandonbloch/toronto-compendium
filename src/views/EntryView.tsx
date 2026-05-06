@@ -28,7 +28,7 @@ export function EntryView() {
         <div className="compendium-entry-name">
           <EntryName entry={entry} />
         </div>
-        <Snapshot />
+        <Snapshot entry={entry} />
       </div>
       <div className="compendium-entry-column compendium-entry-column-details">
         <div className="compendium-entry-section">
