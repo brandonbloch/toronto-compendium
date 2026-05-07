@@ -11,4 +11,5 @@ export interface CompendiumEntry {
   location?: CompendiumLocation;
   date?: string; // YYYY-MM-DD (UTC)
   description?: string;
+  url?: string; // TODO
 }

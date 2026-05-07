@@ -201,6 +201,10 @@ h3 {
   &[data-category='libraries']::before {
     background-image: url('./icons/library.png');
   }
+
+  &[data-category='fire-stations']::before {
+    background-image: url('./icons/fire-station.png');
+  }
 }
 
 .compendium-thumbnail[data-completed='true'] .compendium-thumbnail-image {

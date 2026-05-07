@@ -181,6 +181,9 @@ h3 {
 .compendium-thumbnail-image[data-category=libraries]::before {
   background-image: url("./icons/library.png");
 }
+.compendium-thumbnail-image[data-category=fire-stations]::before {
+  background-image: url("./icons/fire-station.png");
+}
 
 .compendium-thumbnail[data-completed=true] .compendium-thumbnail-image {
   background-color: rgba(255, 255, 255, 0.5);

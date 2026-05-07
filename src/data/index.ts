@@ -1,3 +1,4 @@
+import { fireStationEntries } from '@/data/all-entries/fire-stations.ts';
 import { libraryEntries } from '@/data/all-entries/libraries.tsx';
 import { museumEntries } from '@/data/all-entries/museums.ts';
 import { transitEntries } from '@/data/all-entries/transit.ts';
@@ -33,4 +34,5 @@ export const compendiumData: readonly CompendiumEntry[] = [
     category: 'parks',
     location: 'islands',
   },
+  ...fireStationEntries,
 ] as const;

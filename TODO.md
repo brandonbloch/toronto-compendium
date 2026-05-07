@@ -98,10 +98,6 @@ TODO: remaining list items
 
 TODO: bookmobile (https://tpl.ca/bookmobiles/bookmobile-schedule/)
 
-## Toronto Fire Stations
-
-https://www.toronto.ca/community-people/public-safety-alerts/understanding-emergency-services/fire-station-locations/#location=&lat=&lng=&zoom=
-
 ## Attractions
 
 - CN Tower (Observation Deck)
