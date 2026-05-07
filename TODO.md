@@ -30,7 +30,6 @@ TODO
 
 - CN Tower
 - Rogers Centre
-- Ripley's Aquarium
 - Scotiabank Arena
 - BMO Field
 - Gooderham Building
@@ -43,7 +42,6 @@ TODO
 - Toronto City Hall
 - Ontario Legislative Building
 - Old Mill
-- Hockey Hall of Fame
 - Sharp Centre for Design (OCAD)
 - Toronto Police Headquarters
 - Queen's Quay Terminal

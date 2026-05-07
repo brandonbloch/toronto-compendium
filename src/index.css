@@ -109,6 +109,28 @@ h2 {
   margin-left: -0.25rem;
 }
 
+.compendium-section-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #242424;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: stretch;
+}
+.compendium-section-header h2 {
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.compendium-section-header h3 {
+  position: absolute;
+  right: 0;
+  background-color: #242424;
+  padding-left: 0.5rem;
+}
+
 .compendium-section-grid {
   display: flex;
   flex-direction: row;

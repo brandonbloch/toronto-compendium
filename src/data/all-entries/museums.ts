@@ -44,6 +44,11 @@ const minimalMuseumEntries: readonly MinimalMuseumEntry[] = [
     name: 'High Park Zoo',
   },
   {
+    id: 'ripleys-aquarium',
+    name: "Ripley's Aquarium of Canada",
+    shortName: "Ripley's Aquarium",
+  },
+  {
     id: 'bata-shoe-museum',
     name: 'Bata Shoe Museum',
   },
