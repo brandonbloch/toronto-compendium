@@ -7,7 +7,7 @@ export interface EntryNameProps {
 
 export function EntryName({ entry }: EntryNameProps) {
   const { userData, updateEntryCompletion } = useUserData();
-  const completed = userData.completion[entry.id];
+  const completed = !!userData.completion[entry.id];
 
   return (
     <>

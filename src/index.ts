@@ -1,19 +1,20 @@
-import { loadImage } from '@/api/loadImage.ts';
 import { loadUserData } from '@/api/loadUserData.ts';
-import { saveUserData } from '@/api/saveUserData.ts';
+import { updateEntry } from '@/api/updateEntry.ts';
 import { serve } from 'bun';
 import index from './index.html';
 
 const server = serve({
   routes: {
 
+    '/images/:id': (request) =>
+      new Response(Bun.file(`./images/${request.params.id}.webp`)),
+
     '/api/data': {
       GET: loadUserData,
-      POST: saveUserData,
     },
 
-    '/api/image/:id': {
-      GET: loadImage,
+    '/api/entry/:id': {
+      POST: updateEntry,
     },
 
     // Serve index.html for all unmatched routes.

@@ -17,7 +17,7 @@ export function Section({ category }: SectionProps) {
   ), [category]);
   const totalEntries = categoryEntries.length;
   const completedCount = useMemo(() => categoryEntries.reduce((acc, entry) => {
-    const completed = userData.completion[entry.id];
+    const completed = !!userData.completion[entry.id];
     return completed ? acc + 1 : acc;
   }, 0), [categoryEntries, userData.completion]);
 

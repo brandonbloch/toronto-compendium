@@ -14,13 +14,22 @@ export function useUserData() {
     },
   });
 
-  const userData = useMemo(() => data ?? defaultUserData, [data]);
+  const userData = data ?? defaultUserData;
 
   const mutation = useMutation({
-    mutationFn: async (newUserData: UserData) => {
-      await fetch('/api/data', {
+    mutationFn: async (variables: {
+      entryId: string,
+      completed: boolean,
+      image?: File,
+    }) => {
+      const body = new FormData();
+      body.set('completed', variables.completed ? 'true' : 'false');
+      if (variables.image) {
+        body.set('image', variables.image);
+      }
+      await fetch(`/api/entry/${variables.entryId}`, {
         method: 'POST',
-        body: JSON.stringify(newUserData),
+        body,
       });
     },
     onSuccess: async () => {
@@ -29,16 +38,13 @@ export function useUserData() {
     },
   });
 
-  const updateEntryCompletion = useCallback((entryId: string, completion: boolean) => {
-    const updatedUserData = {
-      ...userData,
-      completion: {
-        ...userData.completion,
-      },
-    };
-    updatedUserData.completion[entryId] = completion;
-    mutation.mutate(updatedUserData);
-  }, [mutation, userData]);
+  const updateEntryCompletion = useCallback((entryId: string, completed: boolean, image?: File) => {
+    mutation.mutate({
+      entryId,
+      completed,
+      image,
+    });
+  }, [mutation]);
 
   return useMemo(() => ({
     status,

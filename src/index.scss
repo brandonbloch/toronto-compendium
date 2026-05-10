@@ -188,7 +188,13 @@ h3 {
   width: 6rem;
   height: 6rem;
 
-  &::before {
+  &[data-completed='true'] {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &[data-completed='false']::before {
     position: absolute;
     content: '';
     top: 0;
@@ -346,19 +352,30 @@ h3 {
 }
 
 .compendium-entry-snapshot-background {
-  background-size: cover;
-  background-position: center;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: -1;
+  background-size: cover;
+  background-position: center;
   filter: brightness(0.5);
 }
 
 .compendium-entry-snapshot {
+  position: relative;
   border: solid 2px $text;
   padding-top: 75%;
   box-sizing: border-box;
+}
+
+.compendium-entry-snapshot-uploader {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
 }

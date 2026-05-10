@@ -275,3 +275,7 @@ https://www.toronto.ca/explore-enjoy/history-art-culture/public-art/public-art-m
 ## Hospitals
 
 TODO
+
+## Shopping Malls
+
+TODO

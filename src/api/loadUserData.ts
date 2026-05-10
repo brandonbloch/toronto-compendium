@@ -1,6 +1,7 @@
-import { userData } from '@/db';
+import { userData, writeUserData } from '@/db';
 import { defaultUserData } from '@/db/default.ts';
 
+// TODO: rename to getUserData (including file)
 export async function loadUserData(): Promise<Response> {
   const exists = await userData.exists();
   if (exists) {
@@ -9,7 +10,7 @@ export async function loadUserData(): Promise<Response> {
     return Response.json(data);
   } else {
     // initialize file and respond with default state
-    await userData.write(JSON.stringify(defaultUserData, null, 2));
+    await writeUserData(defaultUserData);
     return Response.json(defaultUserData);
   }
 }
