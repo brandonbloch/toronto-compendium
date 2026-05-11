@@ -29,7 +29,15 @@ export async function updateEntry(request: BunRequest<'/api/entry/:id'>): Promis
     const updatedUserData = await loadUserData();
     delete updatedUserData.completion[entryId];
     await writeUserData(updatedUserData);
-    await Bun.file(`./images/${entryId}.webp`).delete();
+    try {
+      await Bun.file(`./images/${entryId}.webp`).delete();
+    } catch (err) {
+      if (err instanceof Error && 'code' in err && err.code === 'ENOENT') {
+        // tried to delete nonexistent file, ignore
+      } else {
+        throw err;
+      }
+    }
     return Response.json({});
   }
 
@@ -56,7 +64,6 @@ export async function updateEntry(request: BunRequest<'/api/entry/:id'>): Promis
     thumbhash: imageThumbhash,
   };
   await writeUserData(updatedUserData);
-
 
   return Response.json({});
 }

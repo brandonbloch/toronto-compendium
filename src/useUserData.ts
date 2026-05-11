@@ -6,28 +6,32 @@ import { useCallback, useMemo } from 'react';
 export function useUserData() {
   const queryClient = useQueryClient();
 
-  const { status, error, data } = useQuery<UserData>({
+  const { status, error, data: userData } = useQuery<UserData>({
     queryKey: ['userData'],
+    initialData: defaultUserData,
     queryFn: async () => {
       const response = await fetch('/api/data');
-      return await response.json();
+      if (response.ok) {
+        return await response.json();
+      }
+      throw new Error(await response.text());
     },
   });
 
-  const userData = data ?? defaultUserData;
+  type MutationArgs = {
+    entryId: string,
+    completed: boolean,
+    image?: File,
+  };
 
   const mutation = useMutation({
-    mutationFn: async (variables: {
-      entryId: string,
-      completed: boolean,
-      image?: File,
-    }) => {
+    mutationFn: async ({ entryId, completed, image }: MutationArgs) => {
       const body = new FormData();
-      body.set('completed', variables.completed ? 'true' : 'false');
-      if (variables.image) {
-        body.set('image', variables.image);
+      body.set('completed', completed ? 'true' : 'false');
+      if (image) {
+        body.set('image', image);
       }
-      await fetch(`/api/entry/${variables.entryId}`, {
+      await fetch(`/api/entry/${entryId}`, {
         method: 'POST',
         body,
       });

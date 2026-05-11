@@ -1,8 +1,12 @@
 import type { UserData } from '@/db/schema.ts';
 
-export const userData = Bun.file('userdata.json', {
+const userData = Bun.file('userdata.json', {
   type: 'application/json',
 });
+
+export async function userDataExists(): Promise<boolean> {
+  return await userData.exists();
+}
 
 export async function loadUserData(): Promise<UserData> {
   return await userData.json();

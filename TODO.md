@@ -278,4 +278,12 @@ TODO
 
 ## Shopping Malls
 
-TODO
+https://en.wikipedia.org/wiki/List_of_shopping_malls_in_Toronto
+
+- Fairview Mall
+- Scarborough Town Centre
+- Sherway Gardens
+- Toronto Eaton Centre
+- Yorkdale Shopping Centre
+
+TODO: smaller malls?

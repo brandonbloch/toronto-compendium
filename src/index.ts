@@ -1,4 +1,4 @@
-import { loadUserData } from '@/api/loadUserData.ts';
+import { getUserData } from '@/api/getUserData.ts';
 import { updateEntry } from '@/api/updateEntry.ts';
 import { serve } from 'bun';
 import index from './index.html';
@@ -10,7 +10,7 @@ const server = serve({
       new Response(Bun.file(`./images/${request.params.id}.webp`)),
 
     '/api/data': {
-      GET: loadUserData,
+      GET: getUserData,
     },
 
     '/api/entry/:id': {
@@ -21,12 +21,23 @@ const server = serve({
     '/*': index,
   },
 
-  error: (error) => new Response(JSON.stringify({
-    message: error.message,
-    code: error.code,
-  }, null, 2), {
-    status: 500,
-  }),
+  error: (error) => {
+
+    let status: number;
+    if (error.code === 'ENOENT') {
+      status = 404;
+    } else {
+      console.error('router error handler', error, error.stack);
+      status = 500;
+    }
+
+    return new Response(JSON.stringify({
+      message: error.message,
+      code: error.code,
+    }, null, 2), {
+      status,
+    });
+  },
 
   development: process.env.NODE_ENV !== 'production' && {
     // Enable browser hot reloading in development
